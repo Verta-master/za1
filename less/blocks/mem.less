@@ -1,0 +1,75 @@
+.mem {
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 20px;
+  background-image: url(../img/images/bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  ul {
+    .reset();
+    list-style: none;
+    margin-bottom: 40px;
+    
+    li {
+      position: relative;
+      padding-left: 23px;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background: #25CAC4;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+      }
+    }
+  }
+}
+.mem__img {
+  display: none;
+}
+.mem__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 83px;
+  text-transform: uppercase;
+  color: #00001C;
+}
+.mem__subtitle {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #00001C;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.mem__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 271px;
+  height: 71px;
+  max-width: 100%;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #25CAC4;
+  border-radius: 61px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    background: #F3B878;
+    .transition();
+  }
+}
